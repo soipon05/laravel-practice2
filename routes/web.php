@@ -20,5 +20,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+// 会員登録処理
 Route::get('auth/register', 'Auth\RegisterController@showRegistrationForm');
 Route::post('auth/register', 'Auth\RegisterController@register');
+
+// ログイン処理
+Route::get('/auth/login', 'Auth\LoginController@showLoginForm');
+Route::post('/auth/login', 'Auth\LoginController@Login');
