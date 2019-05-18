@@ -27,3 +27,6 @@ Route::post('auth/register', 'Auth\RegisterController@register');
 // ログイン処理
 Route::get('/auth/login', 'Auth\LoginController@showLoginForm');
 Route::post('/auth/login', 'Auth\LoginController@Login');
+
+// ログアウト処理
+Route::get('/auth/logout', 'Auth\LoginController@logout');
