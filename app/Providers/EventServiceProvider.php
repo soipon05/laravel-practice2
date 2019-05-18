@@ -22,10 +22,6 @@ class EventServiceProvider extends ServiceProvider
         'Illuminate\Auth\Events\Registered' => [
             'App\Listeners\RegisteredListener',
         ],
-
-        Registered::class => [
-            SendEmailVerificationNotification::class,
-        ],
     ];
 
     /**
