@@ -30,3 +30,8 @@ Route::post('/auth/login', 'Auth\LoginController@Login');
 
 // ログアウト処理
 Route::get('/auth/logout', 'Auth\LoginController@logout');
+
+// マイページ
+Route::get('/mypage', function () {
+    return view('home');
+});
