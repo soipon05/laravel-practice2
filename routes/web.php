@@ -35,3 +35,6 @@ Route::get('/auth/logout', 'Auth\LoginController@logout');
 Route::get('/mypage', function () {
     return view('home');
 });
+
+// App\Http\Controller\AddTaskActionの__invokeメソッドを実行
+Route::post('/tasks', 'AddTaskAction');
