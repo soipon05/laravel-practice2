@@ -33,7 +33,7 @@ Route::get('/auth/logout', 'Auth\LoginController@logout');
 
 // マイページ
 Route::get('/mypage', function () {
-    return view('home');
+    return view('/home');
 });
 
 // App\Http\Controller\AddTaskActionの__invokeメソッドを実行
